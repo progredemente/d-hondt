@@ -1,0 +1,31 @@
+@font-face {
+  font-family: ComicTypo;
+  src: url('./comic_typo.ttf');
+}
+
+* {
+    font-family: ComicTypo;
+    box-sizing: border-box;
+    --primary-color: #f5dc00;
+    --secondary-color: #fff6a1;
+    --link-color: #9c8d00;
+    color: black;
+    outline: none;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 1.5em;
+    width: 1000px;
+    background-color: var(--primary-color);
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
