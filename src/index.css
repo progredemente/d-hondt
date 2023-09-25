@@ -4,7 +4,6 @@
     --primary-color: #f5dc00;
     --secondary-color: #fff6a1;
     --link-color: #9c8d00;
-    color: black;
     outline: none;
 }
 
@@ -13,9 +12,8 @@ html, body, #root {
 }
 
 body {
-    margin: 0 auto;
+    margin: 0;
     font-size: 1.5em;
-    width: 1000px;
     background-color: var(--primary-color);
     height: 100%;
 }
@@ -23,4 +21,11 @@ body {
 a {
     text-decoration: none;
     color: var(--link-color);
+}
+
+.apps-bar-container {
+    --apps-bar-primary-color: var(--link-color) !important;
+    --apps-bar-secondary-color: black !important;
+    --apps-bar-text-primary-color: white !important;
+    --apps-bar-text-secondary-color: black !important;
 }

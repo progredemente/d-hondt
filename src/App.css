@@ -1,7 +1,10 @@
 .app {
+    margin: 0 auto;
+    width: 1000px;
     background-color: var(--secondary-color);
     padding: 0 50px;
     min-height: 100%;
+    color: black;
 }
 
 .app > div {

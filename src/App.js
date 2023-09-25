@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Cell, Pie, PieChart, Tooltip } from 'recharts';
 import './App.css';
+import { AppsBar } from 'components/AppsBar';
+
 
 class App extends Component {
 
@@ -76,7 +78,7 @@ class App extends Component {
             return { name: this.state.names[i], seats }
         });
         return (
-            <>
+            <AppsBar current={'d-hondt'}>
                 <div className='app'>
                     <div>
                         <div className='title'>
@@ -250,7 +252,7 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
-            </>
+            </AppsBar>
         )
     }
 }
