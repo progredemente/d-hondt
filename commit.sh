@@ -1,15 +1,10 @@
 #!/bin/sh
-npm run build
-rm -Rf docs
-mv build docs
-cp .well-known docs/. -R
-cp _config.yml docs/.
-cp CNAME docs/.
-git add *
-TEXT="New post"
 if [ $# -gt 0 ]
 then
-    TEXT=$1
+    npm run build
+    git add *
+    git commit -m "$1"
+    git push origin master
+else
+    echo "Enter commit message"
 fi
-git commit -m "$TEXT"
-git push origin master

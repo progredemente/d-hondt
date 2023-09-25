@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { Cell, Pie, PieChart, Tooltip } from 'recharts';
 import './App.css';
 
